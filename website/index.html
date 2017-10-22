@@ -9,12 +9,6 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-  <style>
-     #map {
-      height: 400px;
-      width: 100%;
-     }
-  </style>
 </head>
 
 <body>
@@ -24,36 +18,16 @@
     <li>Page 3</li>
     <li id="login">Log in</li>
   </ul>
-  <h1>Protest Name</h1>
-  <h3>Description of protest</h3>
-=======
-  <h3>My Google Maps Demo</h3>
+  <div class="header">Protest Name</div>
+  <div class="subHeader">Description of protest</div>
+  <div class="divider"></div>
+  <div class="mapHeader">Location</div>
   <div id="map"></div>
-  <script>
-    function initMap() {
-      var startpos = {lat: 14.05, lng: 0};
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: startpos
-      });
-      var marker = new google.maps.Marker({
-        position: startpos,
-        map: map
-      });
-    }
-  </script>
+  <div id="feed"><a class="twitter-timeline" data-tweet-limit="5" href="https://twitter.com/DubHacks?ref_src=twsrc%5Etfw">Tweets by DubHacks</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
   <script async defer
-<<<<<<< HEAD
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDr7VV8wXraC_fG59r7keeu62FaO1KC9Y&callback=initMap">
   </script>
-  <div id="feed"><a class="twitter-timeline" data-tweet-limit="5" href="https://twitter.com/DubHacks?ref_src=twsrc%5Etfw">Tweets by DubHacks</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-=======
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172139.41617588024!2d-122.48214992793356!3d47.61294318030702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C+WA!5e0!3m2!1sen!2sus!4v1508654453486" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> class="twitter-timeline" href="https://twitter.com/DubHacks?ref_src=twsrc%5Etfw">Tweets by DubHacks</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-
-
->>>>>>> 4697930bd97b1486ca21024110e5834f81d28211
-  <script type="text/javascript" src="js/scripts.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
 <!-- Trey was here! -->
