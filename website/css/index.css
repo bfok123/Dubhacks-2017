@@ -1,6 +1,5 @@
 body {
   font-family: "montserrat", sans-serif;
-  background-image: url("http://skipperfilms.com/wp-content/uploads/2014/10/world-map-background.jpg");
   text-align: center !important;
   background-size: 100%;
   background-attachment: fixed;
@@ -8,10 +7,16 @@ body {
 }
 
 #navbar {
-  background-color: black;
+  margin-top: 1vh;
+  background-color: #5DADE2;
   display: inline-block;
   list-style-type: none;
   width: 100%;
+}
+
+.currentPage {
+  border-bottom: white 5px solid;
+  padding-bottom: 2%;
 }
 
 #map {
@@ -26,13 +31,18 @@ body {
  background-color: #FFF;
 }
 
+.centeredHeader {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
 #header {
   width: 100%;
   text-align: center;
 }
 #header > h1 {
   font-weight: 500;
-  color: white;
 }
 
 #header > h3 {
@@ -40,7 +50,6 @@ body {
   font-weight: 500;
   text-align: center;
   margin-top: 1%;
-  color: white;
 }
 
 .mapAndFeedHeader {
@@ -49,7 +58,6 @@ body {
   margin-right: auto;
   text-align: center;
   font-size: 25px;
-  color: white;
 }
 
 .divider {
@@ -65,7 +73,7 @@ body {
 
 .link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .link:hover {
@@ -77,11 +85,6 @@ body {
   padding: 1% 2%;
   font-size: 20px;
   float: left;
-  color: white;
-}
-
-#username, #password {
-  color: white;
 }
 
 #username input, #password input {
@@ -129,8 +132,4 @@ body {
 
 .protest h3 {
   font-size: 40pt;
-}
-
-#heading {
-  color: #C0C0C0;
 }
