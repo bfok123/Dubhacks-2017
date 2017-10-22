@@ -1,6 +1,6 @@
 body {
   font-family: "montserrat", sans-serif;
-  background-color: #E6F2EF;
+  background-color: #E692EF;
 }
 
 #navbar {
@@ -8,6 +8,10 @@ body {
   display: inline-block;
   list-style-type: none;
   width: 100%;
+}
+
+#login {
+  float: right !important;
 }
 
 #navbar li {
@@ -27,10 +31,11 @@ body {
 
 #feed {
   margin-top: 10vh;
-  width: 80%;
+  width: 60%;
   height: 50vh;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   border: black 1px solid;
+  overflow-y: scroll;
 }
