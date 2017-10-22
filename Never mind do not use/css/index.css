@@ -1,0 +1,17 @@
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+#navbar {
+  background-color: black;
+  display: inline-block;
+  list-style-type: none;
+  width: 100%;
+}
+
+#navbar li {
+  padding: 1% 2%;
+  font-size: 20px;
+  float: left;
+  color: white;
+}
