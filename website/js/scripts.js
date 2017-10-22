@@ -1,19 +1,18 @@
 (function() {
 "use strict"
 document.onload = function() {
-  debugger;
   if($('#unique').length > 0) {
       firebase.database().ref('/users/').once('value', function(snapshot) {
         snapshot.forEach(function(value) {
           value.forEach(function(user) {
             user.forEach(function(events) {
               appendEvent(events.child('title').val(), events.child('startLocation').val(), events.child('description').val(), events.child('date').val(), events.child('time').val());
-});
-});
-});
-});
-}
-};
+            });
+          });
+        });
+      });
+    };
+  };
 
 function initMap() {
     var startpos = {lat: 14.05, lng: 0};
@@ -28,31 +27,32 @@ function initMap() {
 };
 
 function openProtestPage(protestTitle) {
-    firebase.database().ref('/users/').once('value', function(snapshot) {
-      snapshot.forEach(function(value) {
-        value.forEach(function(name) {
-          name.forEach(function(events) {
-            if(events.child('title').val() === protestTitle) {
-              $('#title').text(events.child('title').val());
-              $('#description').text(events.child('description').val());
-              /*
-              $('#map').append('\
+  document.getElementById('mainPage').style.display = "none";
+  document.getElementById('protestPage').style.display = "block";
+  firebase.database().ref('/users/').once('value', function(snapshot) {
+    snapshot.forEach(function(value) {
+      value.forEach(function(name) {
+        name.forEach(function(events) {
+          console.log(protestTitle);
+          if(events.child('title').val() === protestTitle) {
+            $('#title').text(events.child('title').val());
+            $('#description').text(events.child('description').val());
+            $('#protestTimeAndDate').text(events.child('date').val() + " @ " + events.child('time').val());
+            $('#map').append('\
               <iframe\
                 frameborder="0"\
                 style="border:0"\
-                src=\"https://www.google.com/maps/embed/v1/directions?key=AIzaSyAB1Kq4p_9yKm5PFdCxCEasII-5LORxhbA&origin=\"' + events.child('startLocation').val() + '&destination=' + events.child('endLocation').val() + '&mode=walking"\
+                src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAB1Kq4p_9yKm5PFdCxCEasII-5LORxhbA&origin=' + events.child('startLocation').val() + '&destination=' + events.child('endLocation').val() + '&mode=walking"\
                 allowfullscreen>\
               </iframe>');
-              */
-            };
-          });
+            $('.twitter-timeline').attr('href', 'https://twitter.com/' + events.child('twitterUsername').val() + '?ref_src=twsrc%5Etfw');
+            $('.twitter-timeline').after('<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>');
+          };
         });
       });
     });
-    document.getElementById('mainPage').style.display = "none";
-    debugger;
-    document.getElementById('protestPage').style.display = "block";
-  };
+  });
+};
 
 function appendEventsInEditList(protestTitle) {
   var el = document.createElement('div');
@@ -66,10 +66,10 @@ function appendEventsInEditList(protestTitle) {
 
 function appendEvent(protestTitle, startLocation, protestDescription, protestDate, protestTime) {
   var div = document.createElement('div');
-  div.innerHTML = '<h3><a href="" class="link">' + protestTitle + '</a></h3><h4>' + startLocation + '</h4><h5>' + protestDescription + '</h5><h6>' + protestDate + ' @ ' + protestTime;
-  div.class += 'protest';
+  div.innerHTML = '<h3><a href="#" class="link">' + protestTitle + '</a></h3><h4>' + startLocation + '</h4><h5>' + protestDescription + '</h5><h6>' + protestDate + ' @ ' + protestTime;
+  div.className += ' protest';
   document.getElementById('unique').appendChild(div);
-  div.addEventListener("click", function(protestTitle) {
+  div.addEventListener("click", function() {
     openProtestPage(protestTitle);
   });
 };
@@ -80,6 +80,7 @@ if($('#unique').length > 0) {
       snapshot.forEach(function(value) {
         value.forEach(function(user) {
           user.forEach(function(events) {
+            console.log(events.child('title').val());
             appendEvent(events.child('title').val(), events.child('startLocation').val(), events.child('description').val(), events.child('date').val(), events.child('time').val());
           });
         });
@@ -115,12 +116,15 @@ function applyButtonClick() {
     $('#twitterUsername div').remove();
     $('#twitterUsername').append('<div>Please enter fill in all blank fields.</div>');
   } else {
+    /*if(firebase.database().ref('/users/' + $('#username input').val() + '/events/' + $('#protestTitle input').val()).child('title').val() === $('#protestTitle input').val()) {
+      $(this).closest('.eventInEditList').text.includes($('#protestTitle input').val()).remove();
+    }*/
     firebase.database().ref('/users/' + $('#username input').val() + '/events/' + $('#protestTitle input').val()).set({
       title: $('#protestTitle input').val(),
       description: $('#protestDescription input').val(),
       time: $('#protestTime input').val(),
       date: $('#protestDate input').val(),
-      startLocation: $('#startLocation input').val(),
+      startLocation: $('#startLocation input').val().replace(/[, ]+/g, " ").trim(),
       endLocation: $('#endLocation input').val(),
       twitterUsername: $('#twitterUsername input').val()
     });
