@@ -5,12 +5,7 @@ body {
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-<<<<<<< HEAD
   color: #FFF !important;
-  
-=======
-
->>>>>>> fca73f0367f47e1a15bfd75ccf5ba4fe1fb6fd4b
 }
 
 #navbar {
@@ -37,20 +32,13 @@ body {
   font-weight: 500;
 }
 
-<<<<<<< HEAD
 #header > h3 {
-=======
-.centeredHeader {
   font-size: 30px;
   font-weight: 500;
   text-align: center;
   margin-top: 1%;
 }
 
-.subHeader {
->>>>>>> fca73f0367f47e1a15bfd75ccf5ba4fe1fb6fd4b
-  font-size: 20px;
-}
 
 .mapHeader {
   margin: 3vh auto;
