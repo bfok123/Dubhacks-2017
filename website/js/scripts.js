@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <SCRIPT>
 function passWord() {
 var testV = 1;
@@ -24,3 +25,16 @@ return " ";
 <input type="button" value="Enter Protected Area" onClick="passWord()">
 </FORM>
 </CENTER>
+=======
+function initMap() {
+  var startpos = {lat: 14.05, lng: 0};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: startpos
+  });
+  var marker = new google.maps.Marker({
+    position: startpos,
+    map: map
+  });
+}
+>>>>>>> 02426dc0abbdf25a20c559a5f94a439498405839

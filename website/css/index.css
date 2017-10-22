@@ -1,6 +1,10 @@
 body {
   font-family: "montserrat", sans-serif;
+<<<<<<< HEAD
   background-color: #E692EF !important;
+=======
+  background-color: #E6F2EF !important;
+>>>>>>> 02426dc0abbdf25a20c559a5f94a439498405839
 }
 
 #navbar {
@@ -8,6 +12,39 @@ body {
   display: inline-block;
   list-style-type: none;
   width: 100%;
+}
+
+#map {
+ height: 60vh;
+ width: 60%;
+ text-align: center;
+ margin: 5vh auto;
+ border: black 1px solid;
+}
+
+.header {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 10%;
+}
+
+.subHeader {
+  font-size: 20px;
+  margin-left: 10%;
+}
+
+.mapHeader {
+  margin: 3vh auto;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.divider {
+  height: 1px;
+  width: 80%;
+  margin: 2vh auto;
+  background-color: black;
 }
 
 #login {
@@ -21,14 +58,6 @@ body {
   color: white;
 }
 
-#map {
-  width: 50%;
-  height: 50vh;
-  margin: auto;
-  text-align: center;
-  border: black 1px solid;
-}
-
 #feed {
   margin-top: 10vh;
   width: 60%;
@@ -36,6 +65,5 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: black 1px solid;
   overflow-y: scroll;
 }
