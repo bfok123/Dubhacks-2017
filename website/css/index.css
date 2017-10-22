@@ -1,0 +1,99 @@
+body {
+  font-family: "montserrat", sans-serif;
+  background-image: url("http://skipperfilms.com/wp-content/uploads/2014/10/world-map-background.jpg");
+  text-align: center !important;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #FFF !important;
+  
+}
+
+#navbar {
+  background-color: black;
+  display: inline-block;
+  list-style-type: none;
+  width: 100%;
+}
+
+#map {
+ height: 60vh;
+ width: 60%;
+ text-align: center;
+ margin: 5vh auto;
+ border: black 1px solid;
+ background-color: #FFF;
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+}
+#header > h1 {
+  font-weight: 500;
+}
+
+#header > h3 {
+  font-size: 20px;
+}
+
+.mapHeader {
+  margin: 3vh auto;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.divider {
+  height: 1px;
+  width: 80%;
+  margin: 2vh auto;
+  background-color: #FFF;
+}
+
+#login {
+  float: right !important;
+}
+
+#navbar li {
+  padding: 1% 2%;
+  font-size: 20px;
+  float: left;
+  color: white;
+}
+
+#feed {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 60%;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.protest {
+  margin-top: 50px;
+  border: solid !important;
+  border-width: 2px !important;
+  box-shadow: 10px 10px 5px #888888 !important;
+  width: 75% !important;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 10px;
+  opacity: 0.85;
+}
+
+#fancy {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.protest h3 {
+  font-size: 40pt;
+}
+
+#heading {
+  color: #C0C0C0;
+}
