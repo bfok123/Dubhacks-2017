@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>ProtestPro</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+</head>
+
+<body>
+  <ul id="navbar">
+    <li><a href="index.html" class="link">Home</a></li>
+    <li class="currentPage"><a href="protest.html" class="link">Protest</a></li>
+    <li onclick="passWord();">Access the Protest</li>
+    <li id="login"><a href="login.html" class="link">Log in</a></li>
+  </ul>
+  <div id="header">
+    <h1>Protest Name</h1>
+    <h3>Description of protest</h3>
+  </div>
+  <div class="divider"></div>
+  <div class="mapAndFeedHeader">Location</div>
+  <div id="map"></div>
+  <div class="mapAndFeedHeader">Live Feed</div>
+  <div id="feed"><a class="twitter-timeline" data-tweet-limit="5" href="https://twitter.com/DubHacks?ref_src=twsrc%5Etfw">Tweets by DubHacks</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDr7VV8wXraC_fG59r7keeu62FaO1KC9Y&callback=initMap">
+  </script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
