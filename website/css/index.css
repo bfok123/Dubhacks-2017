@@ -5,7 +5,6 @@ body {
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
 }
 
 #navbar {
@@ -27,9 +26,11 @@ body {
   font-size: 30px;
   font-weight: 500;
   margin-left: 10%;
+  color: white;
 }
 
 .centeredHeader {
+  color: white;
   font-size: 30px;
   font-weight: 500;
   text-align: center;
@@ -39,20 +40,21 @@ body {
 .subHeader {
   font-size: 20px;
   margin-left: 10%;
+  color: white;
 }
 
 .mapHeader {
   margin: 3vh auto;
   text-align: center;
   font-size: 20px;
-
+  color: white;
 }
 
 .divider {
   height: 1px;
   width: 80%;
   margin: 2vh auto;
-  background-color: black;
+  background-color: white;
 }
 
 #login {
@@ -77,7 +79,7 @@ body {
 }
 
 #username, #password {
-
+  color: white;
 }
 
 #username input, #password input {
