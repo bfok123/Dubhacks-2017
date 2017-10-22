@@ -4,13 +4,11 @@ body {
 
 #navbar {
   background-color: black;
+  display: inline-block;
+  width: 100%;
 }
 
-#navbar.ul {
-  list-style-type: none;
-  display: inline;
-}
-
-#navbar.li {
+#navbar li {
+  list-style: none;
   color: white;
 }
