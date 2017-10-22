@@ -1,6 +1,10 @@
 body {
   font-family: "montserrat", sans-serif;
+<<<<<<< HEAD
   background-color: #E692EF;
+=======
+  background-color: #E6F2EF !important;
+>>>>>>> 48c33df0c7a5e4a586e55237d90d4a59f4626a1f
 }
 
 #navbar {
