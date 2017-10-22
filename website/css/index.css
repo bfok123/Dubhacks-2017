@@ -15,7 +15,7 @@ body {
 }
 
 .currentPage {
-  border-bottom: white 5px solid;
+  border-bottom: black 5px solid;
   padding-bottom: 2%;
 }
 
@@ -64,7 +64,7 @@ body {
   height: 1px;
   width: 80%;
   margin: 2vh auto;
-  background-color: white;
+  background-color: black;
 }
 
 #login {
@@ -87,11 +87,19 @@ body {
   float: left;
 }
 
-#username input, #password input {
+#username input, #password input, #protestTitle input, #protestDescription input, #protestTime input, #protestDate input, #startLocation input, #endLocation input, #twitterUsername input {
   width: 95%;
 }
 
-#loginBox {
+#createEventButton {
+  display: none;
+  font-size: 25px;
+  border: 3px solid #F2F3F4;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#box {
   padding: 15px;
   width: 40%;
   margin-bottom: 20%;
@@ -113,6 +121,17 @@ body {
   overflow-y: scroll;
 }
 
+.eventInEditList {
+  width: 50%;
+  height: 5vh;
+  border: 1px black solid;
+  margin: 2% auto;
+}
+
+#protestPage {
+  display: none;
+}
+
 .protest {
   margin-top: 50px;
   border: solid !important;
@@ -126,7 +145,7 @@ body {
   opacity: 0.85;
 }
 
-#fancy {
+.fancy {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 

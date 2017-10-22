@@ -14,42 +14,47 @@
 <body>
   <ul id="navbar">
     <li class="currentPage"><a href="index.html" class="link">Home</a></li>
-    <li><a href="protest.html" class="link">Protest</a></li>
-    <li onclick="passWord();">Access the Protest</li>
-    <li id="login"><a href="login.html" class="link">Log in</a></li>
+    <li id="login"><a href="editEvents.html" class="link">Edit Events</a></li>
   </ul>
 
-  <div id="heading">
-    <h1>ProtestPRO</h1>
-    <h3 id="fancy">What's happening now?</h3>
-  </div>
+  <section id="mainPage">
+    <div id="header">
+      <h1>ProtestPRO</h1>
+      <h3 class="fancy">What's happening now?</h3>
+    </div>
+    <div class="divider"></div>
+    <div id="unique"></div>
+  </section>
+  <section id="protestPage">
+    <div id="header">
+      <h1 id="title">Protest Name</h1>
+      <h3 id="description" class="fancy">Description of protest</h3>
+    </div>
+    <div class="divider"></div>
+    <div class="mapAndFeedHeader">Location</div>
+    <div id="map"></div>
+    <div class="mapAndFeedHeader">Live Feed</div>
+    <div id="feed"><a class="twitter-timeline" data-tweet-limit="5" href="https://twitter.com/DubHacks?ref_src=twsrc%5Etfw">Tweets by DubHacks</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+  </section>
 
-  <div class="protest">
-    <h3>Cal Anderson Park</h3>
-    <h4>Capitol Hill, Seattle, Washington, USA</h4>
-    <h5>March against Fascism!</h5>
-    <h6>October, 29 2017 @ 9:00 PST</h6>
-    <div id="map" style="width:80%;height:350px"></div>
-  </div>
-
-  <div class="protest">
-      <h3>Westerpark</h3>
-      <h4>Prinsengracht, Amsterdam, North Holland, The Netherlands</h4>
-      <h5>Equality Now: Autumn Protest</h5>
-      <h6>October, 30 2017 @ 5:00 PST</h6>
-  </div>
-
-  <div class="protest">
-      <h3>Griffith Park</h3>
-      <h4>Los Feliz, Los Angeles, California, USA</h4>
-      <h5>Science First</h5>
-      <h6>November, 5 2017 @ 5:30 PST</h6>
-  </div>
-
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCIpAyG-ZOI7zoA9iY--lr1ZwT3uZ3uZ28",
+      authDomain: "dubhacks-2017-c31d0.firebaseapp.com",
+      databaseURL: "https://dubhacks-2017-c31d0.firebaseio.com",
+      projectId: "dubhacks-2017-c31d0",
+      storageBucket: "dubhacks-2017-c31d0.appspot.com",
+      messagingSenderId: "161955723557"
+    };
+    firebase.initializeApp(config);
   </script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
 </html>

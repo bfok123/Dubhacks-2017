@@ -14,13 +14,11 @@
 <body>
   <ul id="navbar">
     <li><a href="index.html" class="link">Home</a></li>
-    <li class="currentPage"><a href="protest.html" class="link">Protest</a></li>
-    <li onclick="passWord();">Access the Protest</li>
-    <li id="login"><a href="login.html" class="link">Log in</a></li>
+    <li id="login"><a href="editEvents.html" class="link">Edit Events</a></li>
   </ul>
   <div id="header">
-    <h1>Protest Name</h1>
-    <h3>Description of protest</h3>
+    <h1 id="title">Protest Name</h1>
+    <h3 id="description" class="fancy">Description of protest</h3>
   </div>
   <div class="divider"></div>
   <div class="mapAndFeedHeader">Location</div>
@@ -29,10 +27,10 @@
   <div id="feed"><a class="twitter-timeline" data-tweet-limit="5" href="https://twitter.com/DubHacks?ref_src=twsrc%5Etfw">Tweets by DubHacks</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 
   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDr7VV8wXraC_fG59r7keeu62FaO1KC9Y&callback=initMap">
-  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
-
 </body>
 </html>
