@@ -11,11 +11,11 @@ function initMap() {
 }
 
 $('#loginButton').on('click', function() {
-  if($('#username').val().length == 0 || $('#password').val().length == 0) {
+  if($('#username input').val().length == 0 || $('#password input').val().length == 0) {
     alert('please enter a username and password');
   } else {
-    firebase.database().ref('/users/').child($('#username').val()).once('value', function(snapshot) {
-      if(snapshot.child('username').val() === $('#username').val() && snapshot.child('password').val() === $('#password').val()) {
+    firebase.database().ref('/users/').child($('#username input').val()).once('value', function(snapshot) {
+      if(snapshot.child('username').val() === $('#username input').val() && snapshot.child('password').val() === $('#password input').val()) {
         alert('logged in');
       } else {
         alert('that user does not exist');
@@ -31,11 +31,11 @@ $('#loginButton').on('click', function() {
 });
 
 $("#registerButton").on("click", function() {
-  if($('#username').val().length == 0 || $('#password').val().length == 0) {
+  if($('#username input').val().length == 0 || $('#password input').val().length == 0) {
     alert('please enter a username and password');
   }
-  firebase.database().ref('/users/' + $('#username').val()).set({
-    username: $('#username').val(),
-    password: $('#password').val()
+  firebase.database().ref('/users/' + $('#username input').val()).set({
+    username: $('#username input').val(),
+    password: $('#password input').val()
   });
 });

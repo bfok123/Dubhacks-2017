@@ -1,6 +1,6 @@
 body {
   font-family: "montserrat", sans-serif;
-  background-color: #E6F2EF !important;
+  background-color: white !important;
 }
 
 #navbar {
@@ -22,6 +22,13 @@ body {
   font-size: 30px;
   font-weight: 500;
   margin-left: 10%;
+}
+
+.centeredHeader {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1%;
 }
 
 .subHeader {
@@ -47,11 +54,40 @@ body {
   float: right !important;
 }
 
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
 #navbar li {
   padding: 1% 2%;
   font-size: 20px;
   float: left;
   color: white;
+}
+
+#username, #password {
+  
+}
+
+#username input, #password input {
+  width: 95%;
+}
+
+#loginBox {
+  padding: 15px;
+  width: 40%;
+  margin-bottom: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 3px solid #F2F3F4;
+  border-radius: 10px;
 }
 
 #feed {
