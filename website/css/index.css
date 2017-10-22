@@ -1,7 +1,11 @@
 body {
   font-family: "montserrat", sans-serif;
-  background-color: #E6F2EF !important;
+  background-image: url("http://skipperfilms.com/wp-content/uploads/2014/10/world-map-background.jpg");
   text-align: center !important;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
 }
 
 #navbar {
@@ -56,16 +60,36 @@ body {
 }
 
 #feed {
-  margin: 10vh auto;
+  margin-top: 10vh;
   width: 60%;
   height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   overflow-y: scroll;
 }
 
 .protest {
+  margin-top: 50px;
   border: solid !important;
   border-width: 2px !important;
   box-shadow: 10px 10px 5px #888888 !important;
-  
+  width: 75% !important;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 10px;
+  opacity: 0.85;
+}
+
+#fancy {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.protest h3 {
+  font-size: 40pt;
+}
+
+#heading {
+  color: #C0C0C0;
 }
