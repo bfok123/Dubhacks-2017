@@ -32,4 +32,5 @@ body {
   margin-right: auto;
   text-align: center;
   border: black 1px solid;
+  overflow-y: scroll;
 }
