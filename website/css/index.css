@@ -55,11 +55,9 @@ body {
 }
 
 #feed {
-  margin-top: 10vh;
+  margin: 10vh auto;
   width: 60%;
   height: 50vh;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   overflow-y: scroll;
 }
