@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+  <style>
+     #map {
+      height: 400px;
+      width: 100%;
+     }
+  </style>
 </head>
 
 <body>
@@ -18,12 +24,34 @@
     <li>Page 3</li>
     <li id="login">Log in</li>
   </ul>
+<<<<<<< HEAD
   <h1>Protest Name</h1>
   <h3>Description of protest</h3>
   <div id="map">This is where the map will be</div>
   <div id="feed"><a class="twitter-timeline" href="https://twitter.com/DubHacks?ref_src=twsrc%5Etfw">Tweets by DubHacks</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 
 
+=======
+  <h3>My Google Maps Demo</h3>
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var startpos = {lat: 14.05, lng: 0};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: startpos
+      });
+      var marker = new google.maps.Marker({
+        position: startpos,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDr7VV8wXraC_fG59r7keeu62FaO1KC9Y&callback=initMap">
+  </script>
+  <div id="feed"><a class="twitter-timeline" href="https://twitter.com/DubHacks?ref_src=twsrc%5Etfw">Tweets by DubHacks</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+>>>>>>> 81ff414d3192cd04bcb5dbb30c1211f177fea1e0
   <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

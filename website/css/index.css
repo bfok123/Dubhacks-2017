@@ -1,5 +1,6 @@
 body {
   font-family: "montserrat", sans-serif;
+  background-color: #E6F2EF;
 }
 
 #navbar {
@@ -36,4 +37,5 @@ body {
   margin-right: auto;
   text-align: center;
   border: black 1px solid;
+  overflow-y: scroll;
 }
