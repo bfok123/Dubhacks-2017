@@ -1,4 +1,14 @@
 function initMap() {
+    var startpos = {lat: 14.05, lng: 0};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: startpos
+    });
+    var marker = new google.maps.Marker({
+        position: startpos,
+        map: map
+    });
+}
   var startpos = {lat: 14.05, lng: 0};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
@@ -22,12 +32,6 @@ $('#loginButton').on('click', function() {
       }
     });
   }
-/*
-  firebase.database().ref('/users/' + $('#username').val()).once('value', function(snapshot) {
-    snapshot.forEach(function(snapshotChild) {
-      //if(snapshotChild.val() === )
-    });
-  });*/
 });
 
 $("#registerButton").on("click", function() {
