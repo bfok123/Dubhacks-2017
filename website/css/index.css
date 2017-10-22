@@ -1,66 +1,110 @@
 body {
   font-family: "montserrat", sans-serif;
-  background-image: url("http://skipperfilms.com/wp-content/uploads/2014/10/world-map-background.jpg");
   text-align: center !important;
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  
 }
 
 #navbar {
-  background-color: black;
+  margin-top: 1vh;
+  background-color: #5DADE2;
   display: inline-block;
   list-style-type: none;
   width: 100%;
+}
+
+.currentPage {
+  border-bottom: white 5px solid;
+  padding-bottom: 2%;
 }
 
 #map {
  height: 60vh;
  width: 60%;
  text-align: center;
- margin: 5vh auto;
+ margin-top: 3vh;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 10vh;
  border: black 1px solid;
+ background-color: #FFF;
 }
 
-.header {
+.centeredHeader {
   font-size: 30px;
   font-weight: 500;
-  margin-left: 10%;
-}
-
-.subHeader {
-  font-size: 20px;
-  margin-left: 10%;
-}
-
-.mapHeader {
-  margin: 3vh auto;
   text-align: center;
-  font-size: 20px;
+}
 
+#header {
+  width: 100%;
+  text-align: center;
+}
+#header > h1 {
+  font-weight: 500;
+}
+
+#header > h3 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.mapAndFeedHeader {
+  margin-top: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 25px;
 }
 
 .divider {
   height: 1px;
   width: 80%;
   margin: 2vh auto;
-  background-color: black;
+  background-color: white;
 }
 
 #login {
   float: right !important;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
 #navbar li {
   padding: 1% 2%;
   font-size: 20px;
   float: left;
-  color: white;
+}
+
+#username input, #password input {
+  width: 95%;
+}
+
+#loginBox {
+  padding: 15px;
+  width: 40%;
+  margin-bottom: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 3px solid #F2F3F4;
+  border-radius: 10px;
 }
 
 #feed {
-  margin-top: 10vh;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
   width: 60%;
   height: 50vh;
   margin-left: auto;
@@ -88,8 +132,4 @@ body {
 
 .protest h3 {
   font-size: 40pt;
-}
-
-#heading {
-  color: #C0C0C0;
 }
