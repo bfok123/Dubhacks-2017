@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log in</title>
+</head>
+<body>
+  Username:
+  <input type="text" id="username">
+  <br>
+  Password:
+  <input type="text" id="password">
+  <br>
+  <button id="loginButton">Log in</button>
+  <button id="registerButton">Register</button>
+
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCIpAyG-ZOI7zoA9iY--lr1ZwT3uZ3uZ28",
+      authDomain: "dubhacks-2017-c31d0.firebaseapp.com",
+      databaseURL: "https://dubhacks-2017-c31d0.firebaseio.com",
+      projectId: "dubhacks-2017-c31d0",
+      storageBucket: "dubhacks-2017-c31d0.appspot.com",
+      messagingSenderId: "161955723557"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
