@@ -9,6 +9,10 @@ body {
   width: 100%;
 }
 
+#login {
+  float: right !important;
+}
+
 #navbar li {
   padding: 1% 2%;
   font-size: 20px;
