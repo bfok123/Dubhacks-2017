@@ -1,0 +1,16 @@
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+#navbar {
+  background-color: black;
+}
+
+#navbar.ul {
+  list-style-type: none;
+  display: inline;
+}
+
+#navbar.li {
+  color: white;
+}
