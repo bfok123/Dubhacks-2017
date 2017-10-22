@@ -5,8 +5,12 @@ body {
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   color: #FFF !important;
   
+=======
+
+>>>>>>> fca73f0367f47e1a15bfd75ccf5ba4fe1fb6fd4b
 }
 
 #navbar {
@@ -33,7 +37,18 @@ body {
   font-weight: 500;
 }
 
+<<<<<<< HEAD
 #header > h3 {
+=======
+.centeredHeader {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.subHeader {
+>>>>>>> fca73f0367f47e1a15bfd75ccf5ba4fe1fb6fd4b
   font-size: 20px;
 }
 
@@ -55,11 +70,40 @@ body {
   float: right !important;
 }
 
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
 #navbar li {
   padding: 1% 2%;
   font-size: 20px;
   float: left;
   color: white;
+}
+
+#username, #password {
+
+}
+
+#username input, #password input {
+  width: 95%;
+}
+
+#loginBox {
+  padding: 15px;
+  width: 40%;
+  margin-bottom: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 3px solid #F2F3F4;
+  border-radius: 10px;
 }
 
 #feed {
