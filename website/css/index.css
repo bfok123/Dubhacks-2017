@@ -15,3 +15,21 @@ body {
   float: left;
   color: white;
 }
+
+#map {
+  width: 50%;
+  height: 50vh;
+  margin: auto;
+  text-align: center;
+  border: black 1px solid;
+}
+
+#feed {
+  margin-top: 10vh;
+  width: 80%;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: black 1px solid;
+}
