@@ -1,2 +1,2 @@
 # Dubhacks-2017
-Hi, my name is Brandon!
+Website made for Dubhacks 2017.
